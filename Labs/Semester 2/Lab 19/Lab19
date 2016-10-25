@@ -1,0 +1,32 @@
+/* Program that uses two 1-d arrays. One array will contain euro and the second will contain the Dollar
+equivlant. 
+
+Author: Aaron Byrne
+Date: 14/04/2016
+*/
+
+#define SIZE 5
+
+main()
+{
+    float dollar[SIZE];
+    float euro[SIZE];
+    int i;
+    
+    printf("Please enter the euro values"); 
+    for(i=0;i<SIZE;i++)
+    {
+        scanf("%f",&euro[i]);
+    }
+    
+    for(i=0;i<SIZE;i++)
+    {
+        dollar[i]=euro[i] * 1.05;
+    }
+        
+    for(i=0;i<SIZE;i++)
+    {
+        printf("%c %.2f is $.2f",20AC,euro[i],dollar[i]);
+    }
+    
+}//end main
